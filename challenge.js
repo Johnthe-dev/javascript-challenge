@@ -33,5 +33,24 @@ function anagram(paragraph) {
 	return paragraph
 }
 
+function rotThirteen(paragraph) {
+	let characters= paragraph.split("");
+	characters.forEach(function(character, index, table) {
+		let laterLetters = /^[n-z]+$/i;
+		let earlyLetters = /^[a-m]+$/i;
+		let letterNumber = /^[a-z]+$/i;
+		if(character.match(letterNumber) !== null) {
+			if(character.match(laterLetters) !== null) {
+				let code = character.charCodeAt(0);
+				table[index] = String.fromCharCode(code-13);
+			} else if (character.match(earlyLetters) !== null) {
+				let code = character.charCodeAt(0);
+				table[index] = String.fromCharCode(code+13);
+			}
+		}
+	});
+	paragraph = characters.join("");
+	return paragraph;
+}
 let ipsum = "I love cheese, especially pepper jack camembert de normandie. Squirty cheese bavarian bergkase pepper jack port-salut swiss the big cheese babybel rubber cheese. Squirty cheese monterey jack macaroni cheese cheese strings dolcelatte mozzarella blue castello pecorino. Cheesy grin stilton manchego pecorino monterey jack stilton bocconcini fromage frais. Cream cheese camembert de normandie cheese and wine pepper jack parmesan swiss melted cheese goat. Airedale taleggio ricotta squirty cheese bocconcini everyone loves.";
-console.log(shuffle(ipsum));
+console.log(rotThirteen(ipsum));
