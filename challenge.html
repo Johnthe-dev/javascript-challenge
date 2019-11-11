@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8"/>
+	<!-- link to Javascript-->
+	<script src="challenge.js"></script>
+	<!-- title-->
+	<title>Literary Mutilator</title>
+</head>
+<body>
+<form>
+	<label for="par-1">Paragraph 1</label><input type="text" id="par-1">
+	<label for="par-2">Paragraph 1</label><input type="text" id="par-2">
+	<label for="par-3">Paragraph 1</label><input type="text" id="par-3">
+	<label for="selector">Which methods?</label>
+	<select id="selector" name="selector" size="5" multiple>
+		<option value="shuffle">Shuffle</option>
+		<option value="find-replace">Find and Replace</option>
+		<option value="rot13">ROT-13 "Encryption"</option>
+		<option value="anagrams">Anagrams</option>
+		<option value="p-tag">Load P-tag from JSONPlaceholder</option>
+	</select>
+</form>
+<h3>Result:</h3>
+<div id="result">
+	<p id="par-1-result"></p>
+	<p id="par-2-result"></p>
+	<p id="par-3-result"></p>
+</div>
+</body>
+</html>
