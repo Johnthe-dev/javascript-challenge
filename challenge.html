@@ -10,26 +10,31 @@
 </head>
 <body>
 <form>
-	<label for="par-1">Paragraph 1</label><input type="text" id="par-1">
-	<label for="par-2">Paragraph 1</label><input type="text" id="par-2">
-	<label for="par-3">Paragraph 1</label><input type="text" id="par-3">
+	<label for="parOne">Paragraph 1</label><input type="text" id="parOne"
+																value="Risus sed vulputate odio ut enim blandit volutpat. Enim ut sem viverra aliquet eget sit amet tellus. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Nisi est sit amet facilisis magna etiam tempor orci eu. Felis donec et odio pellentesque diam volutpat commodo sed. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Leo in vitae turpis massa sed elementum tempus. Tortor at auctor urna nunc id cursus. Sed viverra tellus in hac. Ut placerat orci nulla pellentesque. Morbi blandit cursus risus at ultrices mi tempus. Magna fringilla urna porttitor rhoncus. Ultrices sagittis orci a scelerisque purus. Sit amet mattis vulputate enim nulla aliquet porttitor. Elit at imperdiet dui accumsan sit.">
+	<label for="parTwo">Paragraph 1</label><input type="text" id="parTwo" value="Risus sed vulputate odio ut enim blandit volutpat. Enim ut sem viverra aliquet eget sit amet tellus. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Nisi est sit amet facilisis magna etiam tempor orci eu. Felis donec et odio pellentesque diam volutpat commodo sed. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Leo in vitae turpis massa sed elementum tempus. Tortor at auctor urna nunc id cursus. Sed viverra tellus in hac. Ut placerat orci nulla pellentesque. Morbi blandit cursus risus at ultrices mi tempus. Magna fringilla urna porttitor rhoncus. Ultrices sagittis orci a scelerisque purus. Sit amet mattis vulputate enim nulla aliquet porttitor. Elit at imperdiet dui accumsan sit.">
+	<label for="parThree">Paragraph 1</label><input type="text" id="parThree" value="Risus sed vulputate odio ut enim blandit volutpat. Enim ut sem viverra aliquet eget sit amet tellus. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Nisi est sit amet facilisis magna etiam tempor orci eu. Felis donec et odio pellentesque diam volutpat commodo sed. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Leo in vitae turpis massa sed elementum tempus. Tortor at auctor urna nunc id cursus. Sed viverra tellus in hac. Ut placerat orci nulla pellentesque. Morbi blandit cursus risus at ultrices mi tempus. Magna fringilla urna porttitor rhoncus. Ultrices sagittis orci a scelerisque purus. Sit amet mattis vulputate enim nulla aliquet porttitor. Elit at imperdiet dui accumsan sit.">
 	<label for="selector">Which methods?</label>
 	<select id="selector" name="selector" size="4" multiple>
-		<option value="shuffle">Shuffle</option>
-		<option value="rot13">ROT-13 "Encryption"</option>
-		<option value="anagrams">Anagrams</option>
-		<option value="p-tag">Load P-tag from JSONPlaceholder</option>
+		<option value=1>Shuffle</option>
+		<option value=2>ROT-13 "Encryption"</option>
+		<option value=3>Anagrams</option>
+		<option value=4>Load P-tag from JSONPlaceholder</option>
 	</select>
-	<label for="find">Find</label><input type="text" id="find">
-	<label for="replace">Replace With</label><input type="text" id="replace">
-
-	<button type="submit">Apply Mutilator</button>
+	<button type="button" onclick="mutilate()">Apply Mutilator</button>
 </form>
+
 <h3>Result:</h3>
 <div id="result">
-	<p id="par-1-result"></p>
-	<p id="par-2-result"></p>
-	<p id="par-3-result"></p>
+	<p id="parOneResult"></p>
+	<p id="parTwoResult"></p>
+	<p id="parThreeResult"></p>
 </div>
+<form>
+	<label for="find">Find</label><input type="text" id="find">
+	<label for="replace">Replace With</label><input type="text" id="replace">
+	<button type="button" onclick="initiateFindReplaceAll()">Find/Replace All</button>
+	<button type="button" onclick="initiateFindReplace()">Find/Replace first</button>
+</form>
 </body>
 </html>
