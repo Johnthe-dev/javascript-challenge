@@ -5,21 +5,32 @@
 	<meta charset="utf-8"/>
 	<!-- link to Javascript-->
 	<script src="challenge.js"></script>
+	<!--link to css-->
+	<link rel="stylesheet" href="style.css">
 	<!-- title-->
 	<title>Literary Mutilator</title>
 </head>
 <body>
 <form>
-	<label for="parOne">Paragraph 1</label><input type="text" id="parOne"
-																value="Risus sed vulputate odio ut enim blandit volutpat. Enim ut sem viverra aliquet eget sit amet tellus. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Nisi est sit amet facilisis magna etiam tempor orci eu. Felis donec et odio pellentesque diam volutpat commodo sed. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Leo in vitae turpis massa sed elementum tempus. Tortor at auctor urna nunc id cursus. Sed viverra tellus in hac. Ut placerat orci nulla pellentesque. Morbi blandit cursus risus at ultrices mi tempus. Magna fringilla urna porttitor rhoncus. Ultrices sagittis orci a scelerisque purus. Sit amet mattis vulputate enim nulla aliquet porttitor. Elit at imperdiet dui accumsan sit.">
-	<label for="parTwo">Paragraph 1</label><input type="text" id="parTwo" value="Risus sed vulputate odio ut enim blandit volutpat. Enim ut sem viverra aliquet eget sit amet tellus. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Nisi est sit amet facilisis magna etiam tempor orci eu. Felis donec et odio pellentesque diam volutpat commodo sed. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Leo in vitae turpis massa sed elementum tempus. Tortor at auctor urna nunc id cursus. Sed viverra tellus in hac. Ut placerat orci nulla pellentesque. Morbi blandit cursus risus at ultrices mi tempus. Magna fringilla urna porttitor rhoncus. Ultrices sagittis orci a scelerisque purus. Sit amet mattis vulputate enim nulla aliquet porttitor. Elit at imperdiet dui accumsan sit.">
-	<label for="parThree">Paragraph 1</label><input type="text" id="parThree" value="Risus sed vulputate odio ut enim blandit volutpat. Enim ut sem viverra aliquet eget sit amet tellus. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Nisi est sit amet facilisis magna etiam tempor orci eu. Felis donec et odio pellentesque diam volutpat commodo sed. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Leo in vitae turpis massa sed elementum tempus. Tortor at auctor urna nunc id cursus. Sed viverra tellus in hac. Ut placerat orci nulla pellentesque. Morbi blandit cursus risus at ultrices mi tempus. Magna fringilla urna porttitor rhoncus. Ultrices sagittis orci a scelerisque purus. Sit amet mattis vulputate enim nulla aliquet porttitor. Elit at imperdiet dui accumsan sit.">
+	<div class="insertPar">
+		<label for="parOne">Paragraph 1</label>
+		<textarea id="parOne">Booty lateen sail starboard run a shot across the bow nipperkin square-rigged cackle fruit galleon sutler swab. Jolly Roger grapple lookout schooner chase grog blossom Chain Shot keelhaul fire in the hole hang the jib. Take a caulk long clothes gibbet scourge of the seven seas capstan booty nipperkin rutters to go on account sutler.</textarea>
+
+	</div>
+	<div class="insertPar">
+		<label for="parTwo">Paragraph 1</label>
+		<textarea id="parTwo">Nelsons folly quarterdeck log ye scuttle pinnace ballast lee draft skysail. Topgallant Pirate Round no prey, no pay crack Jennys tea cup fluke ahoy gabion draft gangway man-of-war. Grapple topgallant broadside bounty reef sails heave to Blimey Pirate Round maroon league.</textarea>
+
+	</div>
+	<div class="insertPar">
+		<label for="parThree">Paragraph 1</label>
+		<textarea id="parThree">Scallywag chase guns mizzen jolly boat draft scuttle ye trysail spanker lee. Barque Sink me parrel snow draft tack broadside keel gabion league. Transom long clothes crimp main sheet clap of thunder splice the main brace coxswain yardarm fathom piracy.</textarea>
+	</div>
 	<label for="selector">Which methods?</label>
-	<select id="selector" name="selector" size="4" multiple>
+	<select id="selector" name="selector" size="3" multiple>
 		<option value=1>Shuffle</option>
 		<option value=2>ROT-13 "Encryption"</option>
 		<option value=3>Anagrams</option>
-		<option value=4>Load P-tag from JSONPlaceholder</option>
 	</select>
 	<button type="button" onclick="mutilate()">Apply Mutilator</button>
 </form>

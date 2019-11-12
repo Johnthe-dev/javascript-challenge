@@ -148,7 +148,5 @@ function mutilate() {
 	} else if(((typeof selected[1] !== 'undefined') && (selected[1].value === "3")) || ((typeof selected[2] !== 'undefined') && (selected[2].value === "3"))){
 		initiateAnagram(modParOne, modParTwo, modParThree);
 	}
-	/*if(selectList.selectedOptions.includes(1) === true) {
-	}*/
 }
 
